@@ -113,26 +113,25 @@ body .bottom_bar{
     position: absolute;
     top: 18px;
     left: 50%;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-auto-flow: row;
-    grid-auto-rows: 55px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
 .data_value{
-    color: #52575f;
+    color: #888;
     height: max-content;
-    margin-top: auto;
-    margin-bottom: auto;
-    font-size: 15px;
+    font-size: 12px;
+    font-weight: 400;
+    margin: 0;
 }
 
 .data_holder{
     width: 100%;
     height: max-content;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: max-content max-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 .flag_video{
@@ -157,11 +156,12 @@ body .bottom_bar{
 }
 
 .data_title{
-    font-weight: 600;
-    font-size: 18px;
+    font-weight: 700;
+    font-size: 20px;
+    color: #1a1a1a;
     height: max-content;
-    margin-top: auto;
-    margin-bottom: auto;
+    margin: 0;
+    flex: 1;
 }
 
 .id_image_data{
