@@ -116,8 +116,7 @@ body .bottom_bar{
     display: grid;
     grid-template-columns: 100%;
     grid-auto-flow: row;
-    grid-auto-rows: auto;
-    row-gap: 2px;
+    grid-auto-rows: 55px;
 }
 
 .data_value{
@@ -131,8 +130,9 @@ body .bottom_bar{
 .data_holder{
     width: 100%;
     height: max-content;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: max-content max-content;
 }
 
 .flag_video{
